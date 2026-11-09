@@ -1,0 +1,15 @@
+      [1, 2]
+JSON
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Starta Live Server automatiskt",
+      "command": "${command:extension.liveServer.goOnline}",
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starta dagen</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Roboto, sans-serif;
+            margin: 40px auto;
+            max-width: 700px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+            color: #444;
+        }
+
+        .section {
+            margin-top: 2rem;
+        }
+
+        .section h2 {
+            font-size: 1.4rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 8px 0;
+            background-color: #4a6fa5;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .button:hover {
+            background-color: #3a5a85;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        footer {
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #777;
+            border-top: 1px solid #ddd;
+            padding-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Starta dagen</h1>
+
+<p>Den här sidan hjälper dig att starta arbetsdagen med rätt ordning och rätt filer.</p>
+
+<div class="section">
+    <h2>1. Öppna VS Code i rätt mapp</h2>
+    <p>Dubbelklicka på skrivbordsikonen som öppnar <strong>1_Mallen</strong> direkt.</p>
+    <p>Om du vill skapa en genväg:</p>
+    <code>"C:\Program Files\Microsoft VS Code\Code.exe" "C:\Users\11733\iCloudDrive\1_Mallen"</code>
+</div>
+
+<div class="section">
+    <h2>2. Skapa dagens sida</h2>
+    <p>Öppna terminalen i VS Code och kör:</p>
+    <code>.\create_new_day.ps1</code>
+    <p>Det skapar dagens HTML‑fil och lämnar gamla filer orörda.</p>
+</div>
+
+<div class="section">
+    <h2>3. Starta Go Live</h2>
+    <p>För att undvika att Go Live startar i fel katalog:</p>
+    <ul>
+        <li>Stäng alla HTML‑flikar</li>
+        <li>Stäng VS Code</li>
+        <li>Öppna VS Code via skrivbordsikonen</li>
+        <li>Öppna dagens HTML‑fil</li>
+        <li>Tryck <strong>Go Live</strong></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>4. Uppdatera GitHub</h2>
+    <p>Kör ditt script:</p>
+    <code>.\Git.ps1</code>
+    <p>Det committar och pushar automatiskt om det finns ändringar.</p>
+</div>
+
+<div class="section">
+    <h2>5. Börja dagens anteckningar</h2>
+    <ul>
+        <li>Skriv dagens rubrik</li>
+        <li>Lägg till noteringar och arbetsmoment</li>
+        <li>Spara ofta</li>
+    </ul>
+</div>
+
+<footer>
+    Starta dagen – din morgonpanel för dagssidesystemet.
+</footer>
+
+</body>
+</html>

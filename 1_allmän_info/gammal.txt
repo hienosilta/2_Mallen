@@ -1,0 +1,36 @@
+************************************************************************
+
+Write-Output ""
+Write-Output "========================================"
+Write-Output ">>> create_new_day.ps1 körs"
+Write-Output "========================================"
+Write-Output ""
+
+# Hämta dagens datum
+$datum = Get-Date -Format "yyyyMMdd"
+
+$datumLasbart = Get-Date -Format "yyyy-MM-dd"
+
+# Filnamn
+$newFile = "$datum.html"
+
+# Skapa filen om den inte finns
+if (-Not (Test-Path $newFile)) {
+
+    $template = Get-Content "page_template.html" -Raw
+
+    $template = $template -replace "<title>.*?</title>", "<title>$datumLasbart</title>"
+    $template = $template -replace "<!--DATE-->", $datumLasbart
+    $template = $template -replace "<!--TITLE-->", $datumLasbart
+
+    Set-Content -Path $newFile -Value $template -Encoding UTF8
+
+    Write-Output "Ny dagssida skapad: $newFile"
+}
+else {
+    Write-Output "Filen finns redan: $newFile"
+}
+
+Write-Output ""
+Write-Output ">>> Scriptet är klart."
+Write-Output "========================================"
