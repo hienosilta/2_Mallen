@@ -1,0 +1,29 @@
+PS C:\users\11733\iCloudDrive\2_Mallen> git remote -v
+origin  ... (fetch)
+origin  ... (push)
+PS C:\users\11733\iCloudDrive\2_Mallen>
+PS C:\users\11733\iCloudDrive\2_Mallen> git remote remove origin
+PS C:\users\11733\iCloudDrive\2_Mallen> git remote add origin https://github.com/hienosilta/2_Mallen.git
+PS C:\users\11733\iCloudDrive\2_Mallen> git remote -v
+origin  https://github.com/hienosilta/2_Mallen.git (fetch)
+origin  https://github.com/hienosilta/2_Mallen.git (push)
+PS C:\users\11733\iCloudDrive\2_Mallen> git push -u origin main
+Enumerating objects: 83, done.
+Counting objects: 100% (83/83), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (77/77), done.
+Writing objects: 100% (83/83), 5.45 MiB | 2.68 MiB/s, done.
+Total 83 (delta 11), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (11/11), done.
+To https://github.com/hienosilta/2_Mallen.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\users\11733\iCloudDrive\2_Mallen>
+PS C:\users\11733\iCloudDrive\2_Mallen> git log --oneline
+70dbf6f (HEAD -> main, origin/main) Första versionen av 2_Mallen
+PS C:\users\11733\iCloudDrive\2_Mallen> git remote remove origin
+PS C:\users\11733\iCloudDrive\2_Mallen> git remote add origin https://github.com/hienosilta/2_Mallen.git
+PS C:\users\11733\iCloudDrive\2_Mallen> git remote -v
+origin  https://github.com/hienosilta/2_Mallen.git (fetch)
+origin  https://github.com/hienosilta/2_Mallen.git (push)
+PS C:\users\11733\iCloudDrive\2_Mallen>
