@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Anslagstavla</title>
+</head>
+
+<body>
+
+     <header>
+        <div class="ex1"><h1 translate="no">Anslagstavla</h1></div>
+              
+    </header>
+
+    <nav>
+        <button onclick="goToLearn()"><h3 translate="no">Gå vidare till lärprocessen</h3></button><br><br>
+        <button onclick="goToHuben()"><h3 translate="no">Gå vidare till info om GitHub</h3></button> <br>
+    </nav>
+
+    <h1>Gå vidare till</h1>
+
+<div class="container">
+  <div><button onclick="goToLearn()"><h3 translate="no"><div class="myDIV">Gå vidare till lärprocessen</div></h3></button></div>
+  
+  
+  <div><button onclick="goToHuben()"><h3 translate="no">Gå vidare till info om GitHub</h3></button></div>
+  <div>Item 3</div>  
+  <div>Item 4</div>
+  <div>Item 5</div>
+</div>
+
+<h2>Display an Element on Hover</h2>
+
+<div class="myDIV">Hover over me.</div>
+<div class="hide">I am shown when someone hovers over the div above.</div>
+
+<div class="hide">I am shown when someone hovers over the div above.</div>
+       
+
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+   
+    
+</body>
+</html>

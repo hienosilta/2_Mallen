@@ -2,7 +2,7 @@
     window.open("https://translate.google.com/?sl=en&tl=sv&op=translate" );
   }
 
-  function goToW3() {
+  function goToW3Sc() {
     window.open("https://www.w3schools.com/howto/");
   }
 
@@ -11,7 +11,7 @@ function goToLearn() {
   }
 
 function goToDesk() {
-    window.open("github_desktop.html");
+    window.open("http://localhost:5500/github_desktop.html");
    
   }
 
@@ -29,6 +29,11 @@ function goToDesk() {
     window.open("https://www.youtube.com/watch?v=HnVh4-h3gBw&t=1s");
    
   }
+
+ function goToHuben() {
+    window.open("github.html");
+  }
+
 
 
   
